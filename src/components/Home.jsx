@@ -6,10 +6,10 @@ export const menuData = {
     { name: "Zaatar", price: "100,000", ar: "زعتر" },
     { name: "Zaatar & khodra", price: "150,000", ar: "زعتر وخضرة" },
     { name: "Kishk", price: "150,000", ar: "كشك" },
-    { name: "Cheese", price: "200,000", ar: "جبنة" },
-    { name: "Cheese & Kishk", price: "250,000", ar: "جبنة وكشك" },
+    { name: "Cheese", price: "250,000", ar: "جبنة" },
+    { name: "Cheese & Kishk", price: "200,000", ar: "جبنة وكشك" },
     { name: "Cheese & Zaatar", price: "200,000", ar: "جبنة وزعتر" },
-    { name: "Labneh", price: "300,000", ar: "لبنة" },
+    { name: "Labneh", price: "250,000", ar: "لبنة" },
     { name: "Qawarma", price: "300,000", ar: "قاورما" },
     { name: "Cheese & Jombon", price: "400,000", ar: "جبنة وجونبون" },
     { name: "Sujuk", price: "400,000", ar: "سجق" },
@@ -18,28 +18,40 @@ export const menuData = {
     { name: "Kaaki Picon", price: "250,000", ar: "كعكة بيكون" },
   ],
   Desserts: [
-    { name: "Crepe", price: "550,000", ar: "كريب" },
-    { name: "Fettuccini Crepe", price: "550,000", ar: "فيتوتشيني كريب" },
-    { name: "Mini Waffle", price: "450,000", ar: "وافل صغير" },
-    { name: "Mini Pancake", price: "720,000", ar: "بانكيك صغير" },
-    { name: "Mini Donuts", price: "360,000", ar: "دونات صغير" },
+    { name: "Nutella Crepe", price: "500,000", ar: " نيوتيلا كريب " },
+    { name: "Fettuccini Crepe", price: "500,000", ar: "فيتوتشيني كريب" },
+    { name: "Waffle", price: "450,000", ar: "وافل" },
+    { name: "Pancake", price: "720,000", ar: "بانكيك" },
+    { name: "Donuts", price: "360,000", ar: "دونات" },
+    { name: " .... + Lotus", price: "100,000", ar: "+ لوتس"},
+    { name: " .... + Kinder", price: "100,000", ar: "+ كندر"},
+    { name: " .... + Pistachio", price: "300,000", ar: "+ فزدق"},
+
   ],
   "Cold Drinks": [
     { name: "Water", price: "25,000", ar: "ماء" },
     { name: "Juice", price: "50,000", ar: "عصير" },
-    { name: "Soft Drinks", price: "80,000", ar: "مشروبات غازية" },
+    { name: "Maccaw", price: "50,000", ar: "ماكاو" },
     { name: "Milk shake", price: "60,000", ar: "ميلك شيك" },
-    { name: "Maccaw", price: "60,000", ar: "ماكاو" },
+    { name: "Soft Drinks", price: "80,000", ar: "مشروبات غازية" },
     { name: "Dark Blue", price: "60,000", ar: "دارك بلو" },
     { name: "Laban", price: "60,000", ar: "لبن" },
+    { name: "Ice Coffee", price: "75,000", ar: "قهوة مثلجة" },
   ],
   "Hot Drinks": [
     { name: "Tea", price: "50,000", ar: "شاي" },
-    { name: "Coffe", price: "50,000", ar: "قهوة" },
+    { name: "Coffee", price: "50,000", ar: "قهوة" },
     { name: "Cappuccino", price: "50,000", ar: "كابوتشينو" },
     { name: "Nescafe", price: "50,000", ar: "نسكافيه" },
     { name: "Sahlab", price: "200,000", ar: "سحلب" },
   ],
+  "Kaaki Trablouseyi": [
+    { name: "Kaaki Picon", price: "250,000", ar: "كعكة بيكون" },
+    { name: "Kaaki Cheese", price: "250,000", ar: "كعكة جبنة" },
+    { name: "Kaaki Cheese & Jombon", price: "250,000", ar: "كعكة جبنة و جونبون" },
+    { name: "Kaaki Zaatar", price: "250,000", ar: "كعكة زعتر" },
+
+  ]
 };
 
 const Home = () => {
@@ -68,6 +80,14 @@ const Home = () => {
             arabicTitle="مناقيش"
             items={menuData.Manakish}
           />
+
+          <AccordionSection
+            title="Kaaki Trablouseyi"
+            arabicTitle="كعكة طرابلسية"
+            items={menuData["Kaaki Trablouseyi"]}
+          
+          />
+
           <AccordionSection
             title="Desserts"
             arabicTitle="حلويات"
@@ -87,6 +107,8 @@ const Home = () => {
             items={menuData["Hot Drinks"]}
           
           />
+
+          
         </main>
 
         <footer className="fixed text-white bottom-0 w-full bg-red-900 p-4 text-center font-bold shadow-lg">
