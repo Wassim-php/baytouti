@@ -37,6 +37,7 @@ export const menuData = {
     { name: "Dark Blue", price: "60,000", ar: "دارك بلو" },
     { name: "Laban", price: "60,000", ar: "لبن" },
     { name: "Ice Coffee", price: "75,000", ar: "قهوة مثلجة" },
+    { name: "Maestro", price: "50,000", ar: "مايسترو"}
   ],
   "Hot Drinks": [
     { name: "Tea", price: "50,000", ar: "شاي" },
