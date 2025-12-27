@@ -23,7 +23,7 @@ export const menuData = {
     { name: "Donuts", price: "360,000", ar: "دونات" },
     { name: " .... + Lotus", price: "100,000", ar: "+ لوتس"},
     { name: " .... + Kinder", price: "100,000", ar: "+ كندر"},
-    { name: " .... + Pistachio", price: "300,000", ar: "+ فزدق"},
+    { name: " .... + Pistachio", price: "300,000", ar: "+ فستق"},
 
   ],
   "Cold Drinks": [
