@@ -14,6 +14,7 @@ export const menuData = {
     { name: "Cheese & Jombon", price: "400,000", ar: "جبنة وجونبون" },
     { name: "Sujuk", price: "400,000", ar: "سجق" },
     { name: "Cheese & Sujuk", price: "400,000", ar: "جبنة وسجق" },
+    { name: "Fahita", price: "450,000", ar: "فاهيتا" },
   ],
   Dessert: [
     { name: "Nutella Crepe", price: "500,000", ar: " نيوتيلا كريب " },
