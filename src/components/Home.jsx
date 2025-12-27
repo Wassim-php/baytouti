@@ -57,7 +57,7 @@ const Home = () => {
     <div className="relative min-h-screen">
       {/* 1. FIXED BACKGROUND LAYER */}
       <div
-        className="fixed inset-0 z-0 bg-[length:80%] bg-no-repeat bg-center opacity-10 pointer-events-none"
+        className="fixed inset-0 z-0 bg-[length:80%] bg-no-repeat bg-center opacity-30 pointer-events-none"
         style={{ backgroundImage: `url('/images/background2.jpeg')` }} // Removed 'public'
       ></div>
 
