@@ -14,8 +14,6 @@ export const menuData = {
     { name: "Cheese & Jombon", price: "400,000", ar: "جبنة وجونبون" },
     { name: "Sujuk", price: "400,000", ar: "سجق" },
     { name: "Cheese & Sujuk", price: "400,000", ar: "جبنة وسجق" },
-    { name: "Kaaki Trablouseyi", price: "300,000", ar: "كعكة طرابلسية" },
-    { name: "Kaaki Picon", price: "250,000", ar: "كعكة بيكون" },
   ],
   Dessert: [
     { name: "Nutella Crepe", price: "500,000", ar: " نيوتيلا كريب " },
@@ -46,12 +44,11 @@ export const menuData = {
     { name: "Nescafe", price: "50,000", ar: "نسكافيه" },
     { name: "Sahlab", price: "200,000", ar: "سحلب" },
   ],
-  "Kaaki Trablouseyi": [
+  "Kaaki": [
     { name: "Kaaki Picon", price: "250,000", ar: "كعكة بيكون" },
-    { name: "Kaaki Cheese", price: "250,000", ar: "كعكة جبنة" },
+    { name: "Kaaki Traboulsiye", price: "300,000", ar: "كعكة طرابلسية" },
     { name: "Kaaki Cheese & Jombon", price: "250,000", ar: "كعكة جبنة و جونبون" },
-    { name: "Kaaki Zaatar", price: "250,000", ar: "كعكة زعتر" },
-
+    
   ]
 };
 
@@ -60,8 +57,8 @@ const Home = () => {
     <div className="relative min-h-screen">
       {/* 1. FIXED BACKGROUND LAYER */}
       <div
-        className="fixed inset-0 z-0 bg-[length:50%] bg-no-repeat bg-center opacity-10 pointer-events-none"
-        style={{ backgroundImage: `url('/images/background.jpeg')` }} // Removed 'public'
+        className="fixed inset-0 z-0 bg-[length:80%] bg-no-repeat bg-center opacity-10 pointer-events-none"
+        style={{ backgroundImage: `url('/images/background2.jpeg')` }} // Removed 'public'
       ></div>
 
       {/* 2. CONTENT LAYER (Uses z-10 to stay above background) */}
@@ -83,9 +80,9 @@ const Home = () => {
           />
 
           <AccordionSection
-            title="Kaaki Trablouseyi"
+            title="Kaaki"
             arabicTitle="كعكة طرابلسية"
-            items={menuData["Kaaki Trablouseyi"]}
+            items={menuData.Kaaki}
           
           />
 
