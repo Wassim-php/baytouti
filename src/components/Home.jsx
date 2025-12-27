@@ -17,7 +17,7 @@ export const menuData = {
     { name: "Kaaki Trablouseyi", price: "300,000", ar: "كعكة طرابلسية" },
     { name: "Kaaki Picon", price: "250,000", ar: "كعكة بيكون" },
   ],
-  Desserts: [
+  Dessert: [
     { name: "Nutella Crepe", price: "500,000", ar: " نيوتيلا كريب " },
     { name: "Fettuccini Crepe", price: "500,000", ar: "فيتوتشيني كريب" },
     { name: "Waffle", price: "450,000", ar: "وافل" },
@@ -90,9 +90,9 @@ const Home = () => {
           />
 
           <AccordionSection
-            title="Desserts"
+            title="Dessert"
             arabicTitle="حلويات"
-            items={menuData.Desserts}
+            items={menuData.Dessert}
           />
 
           <AccordionSection
