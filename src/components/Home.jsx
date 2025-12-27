@@ -81,7 +81,7 @@ const Home = () => {
 
           <AccordionSection
             title="Kaaki"
-            arabicTitle="كعكة طرابلسية"
+            arabicTitle="كعكة"
             items={menuData.Kaaki}
           
           />
